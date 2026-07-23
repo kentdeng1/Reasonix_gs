@@ -1,79 +1,23 @@
-# --- 系统文件 ---
+# 仓库根目录忽略规则
+# 各项目的详细忽略规则在各子文件夹的 .gitignore 中
+
+# AI Agent 运行时数据
+.reasonix/
+
+# 系统文件
 .DS_Store
 Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
 
-# --- 编辑器 & IDE ---
+# 编辑器
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 
-# --- 环境变量 & 密钥（⚠ 永远不要提交） ---
+# 环境变量
 .env
-.env.*
-!.env.example
-*.pem
-*.key
-*.pfx
-*.p12
-credentials.json
-secrets.yaml
 
-# --- 依赖目录 ---
-node_modules/
-vendor/
+# 构建 / 缓存（根目录级别）
 __pycache__/
-*.pyc
-*.pyo
-.venv/
-venv/
-env/
-
-# --- 构建产物 ---
 dist/
-build/
-out/
-target/
-*.class
-*.jar
-*.war
-*.exe
-*.dll
-*.so
-*.dylib
-*.o
-*.obj
-
-# --- 日志 & 缓存 ---
-*.log
-logs/
-.cache/
-.tmp/
-tmp/
-temp/
-
-# --- 测试覆盖 ---
-coverage/
-.nyc_output/
-.coverage
-
-# --- 数据库 ---
-*.db
-*.sqlite
-*.sqlite3
-
-# --- 压缩包 ---
-*.zip
-*.tar.gz
-*.rar
-*.7z
-
-# --- Claude Code 个人配置（不提交） ---
-.claude/settings.local.json
-
-# --- AI Agent 运行时数据 ---
-.reasonix/
 reasonix.toml
+*.pyc
+*.log
